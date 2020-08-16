@@ -15,14 +15,14 @@ if (!$response['success']) {
 echo "Successfully get token";
 $token = $response['data'];
 
-
-// Form POST data
+// POST data
 $data = [
     "name" => 'Jason Ping',
     'email' => 'eazyee6@gmail.com',
     "url" => 'https://github.com/JasonPing/HTTPRequest'
 ];
 $json = json_encode($data);
+
 $response = $httpClient->post($uri, $json, $token);
 
 var_dump($response);
