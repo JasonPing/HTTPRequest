@@ -25,4 +25,4 @@ $data = [
 $json = json_encode($data);
 $response = $httpClient->post($uri, $json, $token);
 
-print_r($response);
+var_dump($response);
