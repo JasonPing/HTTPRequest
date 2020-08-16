@@ -27,7 +27,7 @@ require_once('HttpClient.php');
 $httpClient = new HttpClient();
 ```
 
-GET request:
+## GET request:
 
 ```sh
 $httpClient->get($uri);
@@ -37,7 +37,7 @@ $httpClient->get($uri);
 
 \$url: pass the url you want request
 
-POST request:
+## POST request:
 
 ```sh
 $httpClient->post($uri, $data, $token);
@@ -49,7 +49,7 @@ $url: pass the url you want request
 $data: request payload, json format
 \$token: privide token, set empty if token is not required
 
-PUT request:
+## PUT request:
 
 ```sh
 $httpClient->put($uri, $data, $token);
@@ -61,7 +61,7 @@ $url: pass the url you want request
 $data: request payload, json format
 \$token: privide token, set empty if token is not required
 
-Authetication request:
+## Authetication request:
 
 ```sh
 $httpClient->authenticate($uri);
@@ -70,6 +70,8 @@ $httpClient->authenticate($uri);
 #### Explanation
 
 \$url: pass the url you want request
+
+## Respond
 
 All request will return respond in follow json structure:
 
